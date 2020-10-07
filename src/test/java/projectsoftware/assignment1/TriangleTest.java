@@ -1,3 +1,5 @@
+package projectsoftware.assignment1;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -6,11 +8,15 @@ public class TriangleTest {
 
     @Test(expected = InvalidTriangleException.class)
     public void testInvalidTriangle() throws InvalidTriangleException {
+        new Triangle(3, 3, 10);
+    }
 
+    @Test
+    public void testStaticFunctions() {
         assertFalse(Triangle.isEquilateral(3, 3, 10));
         assertFalse(Triangle.isIsosceles(3, 3, 10));
         assertFalse(Triangle.isScalene(3, 3, 10));
-        new Triangle(3, 3, 10);
+        assertFalse(Triangle.isValidTriangle(3, 3, 10));
     }
 
     @Test

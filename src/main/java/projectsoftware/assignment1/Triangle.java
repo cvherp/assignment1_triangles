@@ -1,7 +1,11 @@
+package projectsoftware.assignment1;
+
 import java.util.Scanner;
 
 public class Triangle {
-    private double a, b, c;
+    private double a;
+    private double b;
+    private double c;
 
     public Triangle(double a, double b, double c) throws InvalidTriangleException {
         if(!isValidTriangle(a, b, c)) {
@@ -59,7 +63,10 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-        double a, b, c;
+        double a;
+        double b;
+        double c;
+
         Scanner scanner = new Scanner(System.in);
 
         while(true) {

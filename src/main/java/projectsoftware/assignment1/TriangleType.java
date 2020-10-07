@@ -1,3 +1,5 @@
+package projectsoftware.assignment1;
+
 public enum TriangleType {
     EQUILATERAL("Equilateral"),
     ISOSCELES("Isosceles"),
@@ -9,6 +11,7 @@ public enum TriangleType {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return this.name;
     }
